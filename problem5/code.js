@@ -2,10 +2,7 @@
 
 // What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-var num = 10;
-var str1 = "Pass";
-var keepRunning = true;
-
+var num = 0;
 
 function smallDiv(){
 
@@ -15,21 +12,39 @@ function smallDiv(){
 
 	var num = i;
 
-	if(num%1==0 && num%2==0 && num%3==0 && num%4==0 && num%5==0 && num%6==0 && num%7==0 && num%8==0 && num%9==0 && num%10==0 && num%11==0 && num%12==0 && num%13==0 && num%14==0 && num%15==0 && num%16==0 && num%17==0 && num%18==0 && num%19==0 && num%20==0){
 
-		console.log(num);
-		
-		break;
+		for (j=1; j<=20; j++) {
 
+			var trueCounts = 0;
 
-	
+			if(num%j==0){
+
+				trueCounts = trueCounts + 1;
+				//console.log(j);
+				console.log(trueCounts);
+				console.log("test");
+			} else{
+				break;
+			}
+		}
+
+		if(trueCounts==20){
+
+				console.log(num);
+				break;	
+		}
+
 	}
 
+console.log("end");
+
 }
 
 	
-}
+
 
 smallDiv();
+
+//console.log("test");
 
  
