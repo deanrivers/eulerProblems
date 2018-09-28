@@ -10,7 +10,7 @@
 
 function fibonacci(){
 
-var fisrtNumber = 0;
+var firstNumber = 0;
 
 var secondNumber = 1;
 
@@ -23,9 +23,9 @@ var evenNumber = 0;
 
 for (i = 0; i < 1000000000; i++){
 
-	currentSum = fisrtNumber + secondNumber;
+	currentSum = firstNumber + secondNumber;
 
-	fisrtNumber = secondNumber;
+	firstNumber = secondNumber;
 	secondNumber = currentSum;
 
 	console.log('Current Sum:'+ currentSum);
